@@ -1,0 +1,24 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class TestMeTest {
+
+    @Test
+    public void testMultiply() {
+        TestMe tm = new TestMe();
+        assertEquals(20, tm.multiply(4, 5));
+    }
+    @Test
+    public void testIsEven() {
+    
+    TestMe tm = new TestMe();
+    
+    assertTrue(tm.isEven(60));
+    }
+    @Test
+    public void testDivide() {
+    
+    TestMe tm = new TestMe();
+    assertEquals(16.66666, tm.divide(50.0, 3.0), 0.00001);
+    }
+}
